@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background-color: #fefae0;
+      font-family: sans-serif;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      
+  }
+  
+  .menu {
+    background-color: #40916c;
+    text-align: center;
+  }
+  
+  .menu ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+  }
+  
+  .menu ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    
+  }
+  
+  .active, .menu ul li:hover {
+     background: #52b788;
+     border-radius: 30px;
+  }
+  
+  .menu .fa {
+  
+    margin-right: 7px;
+  
+  }
+  
+  .sub-menu-1 {
+    display: none;
+  }
+  
+  .menu ul li:hover .sub-menu-1  {
+    display: block;
+    position: absolute;
+    background: #52b788;
+    margin-top: 15px;
+    margin-left: -15px;
+    border-radius: 30px;
+  }
+  
+  .menu ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+  }
+  
+  .menu ul li:hover .sub-menu-1 ul last-child {
+    border-bottom: none;
+  
+  }
+  
+  .menu ul li:hover .sub-menu-1 ul li a:hover {
+    color: #232d60;
+  }
+  
+  .inicio {
+    margin-left: 10%;
+  }
+  
+  .inicio h1{
+     font-size: 40px;
+     font-weight: 100;
+     margin-top: 24px;
+     margin-bottom: 15px;
+     color: #43291f;
+  }
+  
+  .inicio p{
+    font-size: 30px;
+    color: #43291f;
+  }
+  
+  h2 {
+    font-size: 20px;
+    color: #43291f;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #43291f;
+    margin: none;
+  
+  
+    
+  }
+  
+  .feature-img {
+    height: 70%;
+    position: absolute;
+    right: 20px;
+  
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 160px;
+  }
+  
+  .btn-1 {
+    font-family: 'Raleway', sans-serif bold;
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: #da2c38;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0  #40916c;
+    transition: ease-out 0.3s;
+    font-size: 2em;
+    outline: none;
+  }
+  
+  .btn-1:hover {
+    box-shadow: inset 300px 0 0 0 #40916c;
+  }
+  
+  figure {
+    text-align: right;
+    align-content: right;
+    margin:50px;
+    float: right;
+    vertical-align: top;
+  }
+
+  .shopping-cart {
+    width: 750px;
+    height: 423px;
+    margin: 40px auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+   
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+  }
+   
+  .item {
+    padding: 20px 30px;
+    height: 120px;
+    display: flex;
+  }
+   
+  .item:nth-child(3) {
+    border-top:  1px solid #E1E8EE;
+    border-bottom:  1px solid #E1E8EE;
+  }
+
+  .buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+  }
+  .delete-btn,
+  .like-btn {
+    display: inline-block;
+    Cursor: pointer;
+  }
+  .delete-btn {
+    width: 18px;
+    height: 17px;
+    background: url(&amp;quot;delete-icn.svg&amp;quot;) no-repeat center;
+  }
+   
+  .like-btn {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    background: url('twitter-heart.png');
+    width: 60px;
+    height: 60px;
+    background-size: 2900%;
+    background-repeat: no-repeat;
+  }
+
+ 
+
+  .image {
+    margin-right: -30px;
+  }
+   
+  .description {
+    padding-top: 10px;
+    margin-right: 60px;
+    width: 115px;
+  }
+   
+  .description span {
+    display: block;
+    font-size: 14px;
+    color: #43484D;
+    font-weight: 400;
+  }
+   
+  .description span:first-child {
+    margin-bottom: 5px;
+  }
+  .description span:last-child {
+    font-weight: 300;
+    margin-top: 8px;
+    color: #86939E;
+  }
+
+  .quantity {
+    padding-top: 20px;
+    margin-right: 60px;
+  }
+  .quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+   
+  button[class*=btn] {
+    width: 30px;
+    height: 30px;
+    background-color: #40916c;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  .total-price {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+
+  img {
+     position:relative;
+	   right: 50%;
+     cursor: pointer;
+  }
+
+  
